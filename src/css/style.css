@@ -1,5 +1,3 @@
-@import url(/node_modules/simplelightbox/dist/simple-lightbox.min.css);
-
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -32,11 +30,52 @@ li {
   transform: scale(1.04);
 }
 
+.sl-wrapper.simple-lightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-counter {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.sl-wrapper .sl-navigation .sl-prev,
+.sl-wrapper .sl-navigation .sl-next {
+  height: 20px;
+  width: 12px;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  z-index: 10060;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.sl-wrapper .sl-close {
+  height: 14px;
+  width: 14px;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #fff !important;
+}
+
+.sl-caption.pos-bottom {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
 .feedback-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   border-radius: 8px;
   padding: 24px;
   background: #fff;
@@ -75,6 +114,7 @@ textarea {
 
 textarea {
   height: 80px;
+  resize: none;
 }
 
 input:hover,
