@@ -12,8 +12,8 @@ if (savedState) {
 
 form.addEventListener('input', event => {
   const formData = {
-    email: form.elements.email.value,
-    message: form.elements.message.value,
+    email: form.elements.email.value.trim(),
+    message: form.elements.message.value.trim(),
   };
 
 
@@ -26,8 +26,8 @@ form.addEventListener('submit', event => {
 
 
   const formData = {
-    email: form.elements.email.value,
-    message: form.elements.message.value,
+    email: form.elements.email.value.trim(),
+    message: form.elements.message.value.trim(),
   };
 
   console.log(formData);
